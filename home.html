@@ -2,6 +2,33 @@
 
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
     <title>INSERT TITLE HERE!</title>
     <link rel="stylesheet" href="index.css">
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
@@ -10,6 +37,221 @@
 
   <body>
     <!-- TODO: put your HTML code here! -->
-    <div></div>
+    <div style ="margin-left: 0px;" id="container">
+      <div id="content">
+        <div id="about">
+          <h1>
+            <div>
+            <div style='margin-bottom:20px; font-size:larger;'>
+              Personas and Story Board Project
+            </div>
+          </div>
+          </h1>
+          <h3 style='clear:both' class="subhead">
+            <a>Here</a> we will discover the French Press interface together.
+          </h3>
+          <div class= "button-section">
+            <div class="buttons">
+              <div style= "margin-top: 12px;">
+                <a style = "font-size: medium;" href="#definition-section">Definition</a>
+              </div>
+            </div>
+            <div class="buttons">
+              <div style= "margin-top: 12px;">
+                <a style = "font-size: medium;" href="#interview-section">Interview</a>
+              </div>
+            </div>
+            <div class="buttons">
+              <div style= "margin-top: 12px;">
+                <a style = "font-size: medium;" href="#observation-section">Observation</a>
+              </div>
+            </div>
+            <div class="buttons">
+              <div style= "margin-top: 12px;">
+                <a style = "font-size: medium;" href="#persona-section">Personas</a>
+              </div>
+                        </div>
+            <div class="buttons">
+              <div style= "margin-top: 12px;">
+                <a style = "font-size: medium;" href="#storyboard-section">Story Board</a>
+              </div>            </div>
+          </div>
+
+
+
+
+          <div id="definition-section">
+            <a style='font-size:30px;'> What is a French Press really?</a>
+            <h3 style='clear:both' class="subhead">
+              We can’t enjoy ground coffee without filtering the coffee grounds first. French press solves this problem by filtering the ground coffee by separating the coffee grounds from the brewed coffee with its filter. 
+              How each part works:  Plunger helps us push and pull the filtering system. Lid prevents the coffee from getting cold. Spiral plate, mesh filter and cross plate filters the coffee grounds. Carafe is where the brewed coffee is stored and the handle helps us pour the coffee from the french press to the cup. 
+              .
+            </h3>
+            <iframe src="https://giphy.com/embed/U3gXTGROHsOyI" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/scorpiondagger-U3gXTGROHsOyI"></a></p>
+          </div>
+
+
+
+
+
+
+            <div id="interview-section">
+          <p style = "font-size: 60px; margin-top: -10px; font-weight: 500;">
+Let's ask some questions, shall we?          </p>
+<h3 style=' margin-top: -30px;' class="subhead">
+  I decided to interview my roommates and see what they think about french presses. 
+</h3>
+<h3 style='clear:both' class="subhead" >
+  <a>How do you determine coffee to water ratio?</a><div style="margin-bottom: -20px;">
+    <h3 style = 'font-size: large;'><a>Nisha:</a> I use 2 spoons of coffee and fill the water halfway, which makes 2 cups of coffee.</h3>
+
+  </div>
+  <div style="margin-bottom: -20px;">
+    <h3 style = 'font-size: large;'><a>Asli:</a>I fill the bottom of a mug with coffee grounds and then add water until the top.</h3>
+
+  </div><div style="margin-bottom: -20px;">
+    <h3 style = 'font-size: large;'><a>Safiya:</a> I use 2 spoons of coffee and fill the water 3/4. That makes a cup of coffee..</h3>
+
+  </div>
+  <div style= 'width: 10px; height: 10px;'></div>
+  <h3 style='clear:both; margin-top: 20px;' class="subhead" >
+    <a>When do you stop the plunger, do you instantly push it all the way down? </a><div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Nisha:</a> I wait 5 minutes before pushing the plunger down.</h3>
+    </div>
+    <div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Asli:</a>I wait couple of minutes before pushing it down.</h3>
+  
+    </div><div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Safiya:</a> I wait as long as the coffee package indicates to wait for the coffee to brew and then I push the plunger down. </h3>
+
+    </div>
+      <div style= 'width: 10px; height: 10px;'></div>
+    <h3 style='clear:both' class="subhead" >
+  <a>How do you press the plunger? </a><div style="margin-bottom: -20px;">
+    <h3 style = 'font-size: large;'><a>Nisha, Safiya:</a> I push it slowly.</h3>
+
+  </div>
+  <div style="margin-bottom: -20px;">
+    <h3 style = 'font-size: large;'><a>Asli:</a> I push it fast.</h3>
+  </div>
+
+  <div style= 'width: 10px; height: 10px;'></div>
+  <h3 style='clear:both; margin-top: 20px;' class="subhead" >
+    <a>At what temperature do you pour the water over the coffee grounds?  </a><div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Nisha:</a> Boiling hot.</h3>
+    </div>
+    <div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Asli:</a> Hot.</h3>
+  
+    </div><div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Safiya:</a> I boil my kettle and then wait a few seconds before I pour the water into the french press. </h3>
+    </div>
+ 
+
+  <div style= 'width: 10px; height: 10px;'></div>
+  <h3 style='clear:both; margin-top: 20px;' class="subhead" >
+    <a>How long does it take you to prepare coffee with a french press? </a><div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Nisha:</a> It takes me about 6-7 minutes, very minimal effort.</h3>
+    </div>
+    <div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Asli:</a> It depends on whether I am cleaning it after. It might take 5 to 6 minutes.</h3>
+  
+    </div><div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Safiya:</a> Approximately 4 minutes excluding the time it takes for the water to boil.</h3>
+  </div>
+
+
+  <div style= 'width: 10px; height: 10px;'></div>
+  <h3 style='clear:both; margin-top: 20px;' class="subhead" >
+    <a>Why do you prefer using french press to make coffee over other appliances?</a><div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Nisha:</a> I think that it tastes a lot better. I sometimes like to put cinnamon in with the coffee grounds to make it tastier. .</h3>
+    </div>
+    <div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Asli:</a> It tastes good and has a stronger kick. </h3>
+  
+    </div><div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Safiya:</a> The coffee taste is better and you get a whole pot of coffee. </h3>
+  </div>
+
+  <div style= 'width: 10px; height: 10px;'></div>
+  <h3 style='clear:both; margin-top: 20px;' class="subhead" >
+    <a>Is there anything you find particularly inconvenient about french presses, (ex: hard to wash after usage)?</a><div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Nisha:</a> No, cleaning is super easy, especially if you rinse it right after making the coffee. I think the only thing is that you can’t understand the interface without written instructions. </h3>
+    </div>
+    <div style="margin-bottom: -20px;">
+      <h3 style = 'font-size: large;'><a>Asli:</a> Cleaning the french press is diffucult, I wish that it cleaned itself.  </h3>
+  
+    </div><div>
+      <h3 style = 'font-size: large;'><a>Safiya:</a> Yes, it is hard to wash afterwards because you need to separate all the parts to clean it properly. The wire nets can also start to fray at the ends. Also pulling the plunger up after it is down is impossible. </h3>
+  </div>
+
+</div>
+
+<div class= "button-section" style = 'height: 100px;'>
+  <iframe src="https://giphy.com/embed/SKjrGSWO9WTxC" width="auto" height="100px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  <iframe src="https://giphy.com/embed/l46Cbqvg6gxGvh2PS" width="auto" height="100px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  <iframe src="https://giphy.com/embed/3oKIPqjfyrXlGHwvdK" width="auto" height="100px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</div>
+
+
+
+<div id="observation-section">
+  <h3 style='clear:both; margin-top: 20px;' class="subhead" >
+    <a>Observations</a>
+    <div style="margin-bottom: 0px;">
+      <h3 style = 'font-size: medium;'><a>Nisha:</a> She waited water to boil and then she poured the water to the french press. She removed the lid by pulling the plunger. She measured the amount of coffee grounds with a tablespoon. She then inserted the lid to avoid heat to escape.  She timed the brewing process with a watch.  She put back the lid and pushed the plunger slowly until the filter touched the bottom of the flask. 
+      </h3>
+    </div>
+    <div style="margin-bottom: 0px;">
+      <h3 style = 'font-size: medium;'><a>Asli:</a> She didn’t wait water to boil before she poured the water to the french press. She also didn’t measure the amount of coffee grounds she used. In addition, she didn’t time the brewing process and pushed the plunge when she thought the coffee was ready without using any timers.
+      </h3>
+    </div>
+    <div style="margin-bottom: 0px;">
+      <h3 style = 'font-size: medium;'><a>Safiya:</a> She waited for water to boil then let the water rest for a minute to ensure that the water was not boiling hot.  She then removed the removed the lid by pulling the plunger. She measured the amount of coffee ground with a tablespoon. She poured the water before putting the coffee grounds. Then she pushed the filter by pushing the plunger until the filter touched the coffee-water mixture. She then timed 4 minutes with her phone and pushed the plunger slowly until the filter touched the bottom of the flask. 
+      </h3>
+    </div>
+</div>
+
+
+<div style = 'margin-top: 40px;' id = "persona-section">
+  <h3 style='clear:both; margin-top: 20px;' class="subhead" >
+    <p style = "font-size: 60px; margin-top: -10px; margin-bottom: -5px; font-weight: 500;">
+      Let's build some characters!</p>
+    <a>Persona-1 : Multitask Mary</a>      
+  </h3>
+  <div>
+    <img src="persona1.png" alt="Girl in a jacket" width="800" height="800">
+    <div style= 'width: 100%; height: 70px;'>
+      <h3 style='clear:both; margin-top: 30px;' class="subhead" >
+
+      <a>Persona-2 : Stressed Shannon</a>    
+    </h3>
+  </div>
+    <img src="persona2.png" alt="Girl in a jacket" width="800" height="800">
+
+
+  </div>
+  
+</div>
+
+<div style= 'width: 100%; height: 70px;'>
+
+
+<div id = "storyboard-section">
+  <p style = "font-size: 60px; margin-top: -10px; margin-bottom: -5px; font-weight: 500;">
+    Last but not least the story board! </p>
+    <img src="Story Board .png" alt="Girl in a jacket" width="800" height="800">
+
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
   </body>
 </html>
